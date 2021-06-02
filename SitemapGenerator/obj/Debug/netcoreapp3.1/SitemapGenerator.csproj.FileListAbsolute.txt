@@ -1,0 +1,13 @@
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\bin\Debug\netcoreapp3.1\SitemapGenerator.exe
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\bin\Debug\netcoreapp3.1\SitemapGenerator.deps.json
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\bin\Debug\netcoreapp3.1\SitemapGenerator.runtimeconfig.json
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\bin\Debug\netcoreapp3.1\SitemapGenerator.runtimeconfig.dev.json
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\bin\Debug\netcoreapp3.1\SitemapGenerator.dll
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\bin\Debug\netcoreapp3.1\SitemapGenerator.pdb
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\obj\Debug\netcoreapp3.1\SitemapGenerator.csprojAssemblyReference.cache
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\obj\Debug\netcoreapp3.1\SitemapGenerator.AssemblyInfoInputs.cache
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\obj\Debug\netcoreapp3.1\SitemapGenerator.AssemblyInfo.cs
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\obj\Debug\netcoreapp3.1\SitemapGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\obj\Debug\netcoreapp3.1\SitemapGenerator.dll
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\obj\Debug\netcoreapp3.1\SitemapGenerator.pdb
+C:\Users\Recep\Desktop\Geliştirmeler\SitemapGenerator\SitemapGenerator\SitemapGenerator\obj\Debug\netcoreapp3.1\SitemapGenerator.genruntimeconfig.cache
