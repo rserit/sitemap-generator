@@ -6,8 +6,8 @@ namespace SitemapGenerator
     {
         static void Main(string[] args)
         {
-            var _getData = DataHelper.GetRoutes();
-            XmlCreator.CreateSitemap(_getData, "https://www.mozilla.org");
+            var _getData = DataHelper.GetCrawls("https://www.tasomarket.com").Result;
+            XmlCreator.CreateSitemap(_getData, "https://www.tasomarket.com");
             Console.ReadKey();
         }
     }

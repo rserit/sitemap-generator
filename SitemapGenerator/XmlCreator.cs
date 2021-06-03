@@ -23,7 +23,7 @@ namespace SitemapGenerator
                 for (int i = 0; i < Loop; i++)
                 {
                     // If you have not alternate URLs, you can use "CreateSimpleSitemap" method
-                    CreateAdvancedSitemap(Pages.Skip(Skip).Take(Take).ToList(), "sitemap" + (i + 2), Domain);
+                    CreateSimpleSitemap(Pages.Skip(Skip).Take(Take).ToList(), "sitemap" + (i + 2), Domain);
                     Skip += 1000;
 
                     Current += (i + 2);
@@ -116,6 +116,7 @@ namespace SitemapGenerator
                     Text.WriteElementString("changefreq", "daily");
                     Text.WriteElementString("priority", "0.5"); // See more: https://www.sitemaps.org/protocol.html
                     Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-dd"));
+                    Text.WriteEndElement();
                 }
 
                 Text.WriteEndDocument();
