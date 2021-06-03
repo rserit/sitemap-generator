@@ -71,7 +71,7 @@ namespace SitemapGenerator
                 {
                     Text.WriteStartElement("sitemap");
                     Text.WriteElementString("loc", item.Url);
-                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-ddThh:mm:ss:zzz"));
+                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-dd"));
                     Text.WriteEndElement();
                 }
 
@@ -115,7 +115,7 @@ namespace SitemapGenerator
                     Text.WriteElementString("loc", i.Url); // Current page
                     Text.WriteElementString("changefreq", "daily");
                     Text.WriteElementString("priority", "0.5"); // See more: https://www.sitemaps.org/protocol.html
-                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-ddThh:mm:ss:zzz"));
+                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-dd"));
                 }
 
                 Text.WriteEndDocument();
@@ -162,7 +162,7 @@ namespace SitemapGenerator
                     Text.WriteElementString("loc", i.Url); // Current page
                     Text.WriteElementString("changefreq", "daily"); 
                     Text.WriteElementString("priority", "0.5"); // See more: https://www.sitemaps.org/protocol.html
-                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-ddThh:mm:ss:zzz"));
+                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-dd"));
 
                     foreach (var al in i.Alternates)
                     {
