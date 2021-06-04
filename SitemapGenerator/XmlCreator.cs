@@ -23,7 +23,7 @@ namespace SitemapGenerator
                 for (int i = 0; i < Loop; i++)
                 {
                     // If you have not alternate URLs, you can use "CreateSimpleSitemap" method
-                    CreateSimpleSitemap(Pages.Skip(Skip).Take(Take).ToList(), "sitemap" + (i + 2), Domain);
+                    CreateAdvancedSitemap(Pages.Skip(Skip).Take(Take).ToList(), "sitemap" + (i + 2), Domain);
                     Skip += 1000;
 
                     Current += (i + 2);
@@ -71,7 +71,7 @@ namespace SitemapGenerator
                 {
                     Text.WriteStartElement("sitemap");
                     Text.WriteElementString("loc", item.Url);
-                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-dd"));
+                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
                     Text.WriteEndElement();
                 }
 
@@ -115,7 +115,7 @@ namespace SitemapGenerator
                     Text.WriteElementString("loc", i.Url); // Current page
                     Text.WriteElementString("changefreq", "daily");
                     Text.WriteElementString("priority", "0.5"); // See more: https://www.sitemaps.org/protocol.html
-                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-dd"));
+                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
                     Text.WriteEndElement();
                 }
 
@@ -163,7 +163,7 @@ namespace SitemapGenerator
                     Text.WriteElementString("loc", i.Url); // Current page
                     Text.WriteElementString("changefreq", "daily"); 
                     Text.WriteElementString("priority", "0.5"); // See more: https://www.sitemaps.org/protocol.html
-                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-mm-dd"));
+                    Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
 
                     foreach (var al in i.Alternates)
                     {
