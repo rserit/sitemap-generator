@@ -23,7 +23,8 @@ namespace SitemapGenerator
                 for (int i = 0; i < Loop; i++)
                 {
                     // If you have not alternate URLs, you can use "CreateSimpleSitemap" method
-                    CreateAdvancedSitemap(Pages.Skip(Skip).Take(Take).ToList(), "sitemap" + (i + 2), Domain);
+                    //CreateAdvancedSitemap(Pages.Skip(Skip).Take(Take).ToList(), "sitemap" + (i + 2), Domain);
+                    CreateSimpleSitemap(Pages.Skip(Skip).Take(Take).ToList(), "sitemap" + (i + 2), Domain);
                     Skip += 1000;
 
                     Current += (i + 2);
@@ -165,11 +166,15 @@ namespace SitemapGenerator
                     Text.WriteElementString("priority", "0.5"); // See more: https://www.sitemaps.org/protocol.html
                     Text.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
 
-                    foreach (var al in i.Alternates)
+                    if (i.Alternates != null)
                     {
-                        // Text.WriteElementString("xhtml:link rel=\"alternate\" hreflang=\"de\" href=\"" + De_Alternate_Url + "\"", "");
-                        Text.WriteElementString("xhtml:link rel=\"alternate\" hreflang=\"" + al.Key + "\" href=\"" + al.Value + "\"", "");
+                        foreach (var al in i.Alternates)
+                        {
+                            // Text.WriteElementString("xhtml:link rel=\"alternate\" hreflang=\"de\" href=\"" + De_Alternate_Url + "\"", "");
+                            Text.WriteElementString("xhtml:link rel=\"alternate\" hreflang=\"" + al.Key + "\" href=\"" + al.Value + "\"", "");
+                        }
                     }
+                    
                     Text.WriteEndElement();
                 }
 
